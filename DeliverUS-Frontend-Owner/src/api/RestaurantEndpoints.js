@@ -22,5 +22,9 @@ function update (id, data) {
 function remove (id) {
   return destroy(`restaurants/${id}`)
 }
+// SOLUCION
+function createRestaurantCategories (data) {
+  return post('restaurantCategories', data)
+}
 
-export { getAll, getDetail, getRestaurantCategories, create, update, remove }
+export { getAll, getDetail, getRestaurantCategories, create, update, remove, createRestaurantCategories }
